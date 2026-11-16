@@ -1,0 +1,42 @@
+/* Orbital Salvage page frame: the game itself is all canvas-drawn;
+   this only centres the canvas on a deep-space page and frames it. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #04060f;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #9fb4d8;
+}
+
+.stage {
+  text-align: center;
+  padding: 16px;
+}
+
+canvas#game {
+  display: block;
+  width: min(96vw, 960px);
+  height: auto;
+  background: #070b1d;
+  border: 1px solid #1d2c52;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #0a0f24, 0 0 42px rgba(38, 92, 214, 0.28), 0 18px 50px rgba(0, 0, 0, 0.6);
+}
+
+.hint {
+  margin: 12px 0 0;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #54678f;
+}
